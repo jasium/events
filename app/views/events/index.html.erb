@@ -1,34 +1,19 @@
-<h1>Listing events</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Location</th>
-    <th>Capacity</th>
-    <th>Price</th>
-    <th>Starts at</th>
-    <th>Image file name</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<h1>Events</h1>
 
 <% @events.each do |event| %>
   <tr>
     <p><h2><%= link_to event.name, event %></h2></p>
     <p><%= truncate(event.description, length: 250) %></p>
-    <p><%= event.location %></p>
-    <p><%= pluralize(event.capacity, "Seat") %></p>
-    <p><%= price_helper(event.price) %></p>
-    <p><%= event.starts_at %></p>
-    <p><%= event.image_file_name %></p>
+    <p><strong>Location:</strong><%= event.location %></p>
+    <p><strong>Price:</strong><%= price_helper(event.price) %></p>
+    <p><strong>Capacity:</strong><%= pluralize(event.capacity, "Seat") %></p>
+    <p><strong>When:</strong><%= event.starts_at %></p>
+    <p><img src="<%= image_path(event.image_file_name) %>"</img></p>
     <p><%= link_to 'Show', event %></p>
     <p><%= link_to 'Edit', edit_event_path(event) %></p>
     <p><%= link_to 'Destroy', event, confirm: 'Are you sure?', method: :delete %></p>
   </tr>
 <% end %>
-</table>
 
 <br />
 
