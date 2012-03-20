@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  location: MyString
+  capacity: 1
+  price: 9.99
+  starts_at: 2012-03-20 13:42:25
+  image_file_name: MyString
+
+two:
+  name: MyString
+  description: MyText
+  location: MyString
+  capacity: 1
+  price: 9.99
+  starts_at: 2012-03-20 13:42:25
+  image_file_name: MyString
