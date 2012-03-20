@@ -47,7 +47,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/events/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="18" selection-start="192" selection-end="192" vertical-scroll-proportion="0.32956383">
+            <state line="31" column="3" selection-start="399" selection-end="399" vertical-scroll-proportion="0.8513732">
               <folding />
             </state>
           </provider>
@@ -71,8 +71,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1288" />
-    <option name="y" value="-5" />
+    <option name="x" value="-8" />
+    <option name="y" value="-805" />
     <option name="width" value="1296" />
     <option name="height" value="813" />
   </component>
@@ -440,7 +440,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1288" y="-5" width="1296" height="813" extended-state="6" />
+    <frame x="-8" y="-805" width="1296" height="813" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -550,7 +550,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/events/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="192" selection-end="192" vertical-scroll-proportion="0.32956383">
+        <state line="31" column="3" selection-start="399" selection-end="399" vertical-scroll-proportion="0.8513732">
           <folding />
         </state>
       </provider>
