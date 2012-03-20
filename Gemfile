@@ -6,6 +6,7 @@ gem 'rails', '3.2.2'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'capistrano'
 
 gem 'bartt-ssl_requirement', :require => 'ssl_requirement'
 # Gems used only for assets and not required
