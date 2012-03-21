@@ -1,4 +1,12 @@
-require 'bundler/capistrano'
+# Add RVM's lib directory to the load path.
+$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
+
+# Load RVM's capistrano plugin.    
+require "rvm/capistrano"
+
+set :rvm_ruby_string, '1.9.3'
+#set :rvm_type, :user  # Don't use system-wide RVM
+
 set :application, "events"
 set :repository,  "git@github.com:jasium/events.git"
 
@@ -6,13 +14,18 @@ set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 set :user, "user"
+set :use_sudo, false
 set :deploy_to, "/var/www/#{application}"
+set :copy_remote_dir, deploy_to
 set :branch, "master"
 set :domain, "localhost"
 ssh_options[:forward_agent] = true
 
 set :scm_verbose, "true"
 set :deploy_via, :copy
+set :default_environment, {
+  'PATH' => "/usr/local/rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
+}
 
 role :web, "localhost"                          # Your HTTP server, Apache/etc
 role :app, "localhost"                          # This may be the same as your `Web` server
@@ -26,7 +39,7 @@ after "deploy", "deploy:bundle_gems"
 after "deploy:bundle_gems", "deploy:restart"
  namespace :deploy do
 	task :bundle_gems do
-		run "cd #{deploy_to}/current && PATH=/home/user/.rvm/gems/ruby-1.9.3-p125/bin:/home/user/.rvm/gems/ruby-1.9.3-p125@global/bin:/home/user/.rvm/rubies/ruby-1.9.3-p125/bin:/home/user/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/user/.rvm/bin bundle install vendor/gems"
+		run "cd #{deploy_to}/current && bundle install"
 	end
    task :start do ; end
    task :stop do ; end

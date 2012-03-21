@@ -1,8 +1,8 @@
 Events::Application.routes.draw do
-  scope :constraints => { :protocol => "https" } do
+#  scope :constraints => { :protocol => "https" } do
     resources :events
     # All your SSL routes.
-  end
+#  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
