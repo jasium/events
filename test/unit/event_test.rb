@@ -9,7 +9,7 @@ class EventTest < ActiveSupport::TestCase
                              capacity: 100,
                              price: 9.99,
                              starts_at: "2012-03-20 13:42:25",
-                             image_file_name: "image.png"
+                             image_file_name: "image.png",
                          }
   end
 
@@ -35,4 +35,47 @@ class EventTest < ActiveSupport::TestCase
     event = Event.new(@valid_attributes)
     refute event.free?
   end
+
+  test "event has a description" do
+    event = Event.new(@valid_attributes.except(:description))
+    refute event.valid?
+  end
+
+  test "event has a location" do
+    event = Event.new(@valid_attributes.except(:location))
+    refute event.valid?
+  end
+
+  test "event description < 25 chars is invalid" do
+    event = Event.new(@valid_attributes.merge(description: ('x' * 24 )))
+    refute event.valid?
+  end
+  test "event description >= 25 chars valid" do
+    event = Event.new(@valid_attributes.merge(description: 'x' * 25))
+    assert event.valid?
+  end
+  test "event price is numeric" do
+    event = Event.new(@valid_attributes.merge(price: 'x'))
+    refute event.valid?
+  end
+  test "event price cannot be < 0" do
+    event = Event.new(@valid_attributes.merge(price: -1))
+    refute event.valid?
+  end
+
+  test "event price >= 0" do
+    event = Event.new(@valid_attributes.merge(price: 1))
+    assert event.valid?
+    event = Event.new(@valid_attributes.merge(price: 0))
+    assert event.valid?
+  end
+
+  test "capacity must be integer" do
+    event = Event.new(@valid_attributes.merge(capacity: 0.5))
+    refute event.valid?
+  end
+
+
+
+
 end
