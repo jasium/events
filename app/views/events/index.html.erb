@@ -7,7 +7,7 @@
     <p><strong>Location:</strong><%= event.location %></p>
     <p><strong>Price:</strong><%= price_helper(event.price) %></p>
     <p><strong>Capacity:</strong><%= pluralize(event.capacity, "Seat") %></p>
-    <p><strong>When:</strong><%= event.starts_at %></p>
+    <p><strong>When:</strong><%= event.starts_at.to_s + " - "  + event.ends_at.to_s %></p>
     <p><img src="<%= image_path(event.image_file_name) %>"</img></p>
     <p><%= link_to 'Show', event %></p>
     <p><%= link_to 'Edit', edit_event_path(event) %></p>
