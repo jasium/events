@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Events</title>
+  <title><%=@page_title%></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<header id="header">
+  <div style="font-size:18pt; color:blue; height: .4in;"><%=@page_title%></div>
+</header>
 
+<div id="content">
+  <%= yield %>
+</div>
+
+<footer id="footer">
+  <div style="font-size:12pt; color:black; height: .4in;"><%= @page_title %></div>
+</footer>
 </body>
 </html>

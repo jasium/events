@@ -1,4 +1,8 @@
-<h1>Events</h1>
+
+<% @page_title = "Events" %>
+<h1><%= @page_title%></h1>
+
+<%= link_to 'New Event', new_event_path %>
 
 <% @events.each do |event| %>
   <tr>
@@ -16,5 +20,3 @@
 <% end %>
 
 <br />
-
-<%= link_to 'New Event', new_event_path %>
