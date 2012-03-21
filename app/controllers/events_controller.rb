@@ -2,7 +2,8 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.upcoming
+    @events = Event.all
+    # was event.upcoming
 
     respond_to do |format|
       format.html # index.html.erb

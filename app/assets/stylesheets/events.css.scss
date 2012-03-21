@@ -2,18 +2,68 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$header-color : grey;
-$content-color : lightgrey;
-$footer-color : darkgrey;
+$header-bg-color  : lightgreen;
+$header-color     : #000000;
+$content-bg-color : white;
+$footer-bg-color  : #90ee90;
 
 #header {
-  background-color: $header-color
+  color: $header-color;
+  font-weight: bold;
+  background-color: $header-bg-color;
+  font-size: 18pt;
+  padding: .5em;
 }
 
 #content {
-  background-color: $content-color
+  background-color: $content-bg-color
 }
 
 #footer {
-  background-color: $footer-color
+  background-color: darken($footer-bg-color, 20%);
+  font-size:12pt;
+  color:black;
+  padding: .5em;
+}
+
+//shamelessly stolen, learn to write my own
+#sidebar {
+  width: 15em;
+  float: right;
+
+  h3 {
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    line-height: 1.5em;
+    margin-bottom: .5em;
+  }
+
+  ul {
+    margin: 0 0 1.5em 0;
+    padding: 0;
+    line-height: 1.5em;
+    list-style: none;
+
+    a,
+    a:link,
+    a:visited {
+      padding: 2px;
+      text-decoration: none;
+    }
+
+    li {
+      margin: 0 0 .25em 0;
+      padding: 2px 0;
+      list-style: none;
+      font-size: 1.10em;
+
+      img {
+        vertical-align: top;
+        margin-right: 5px;
+      }
+    }
+  }
 }
