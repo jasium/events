@@ -5,7 +5,7 @@
     <p><h2><%= link_to event.name, event %></h2></p>
     <p><%= truncate(event.description, length: 250) %></p>
     <p><strong>Location:</strong><%= event.location %></p>
-    <p><strong>Price:</strong><%= price_helper(event.price) %></p>
+    <p><strong>Price:</strong><%= price_helper(event) %></p>
     <p><strong>Capacity:</strong><%= pluralize(event.capacity, "Seat") %></p>
     <p><strong>When:</strong><%= event.starts_at.to_s + " - "  + event.ends_at.to_s %></p>
     <p><img src="<%= image_path(event.image_file_name) %>"</img></p>

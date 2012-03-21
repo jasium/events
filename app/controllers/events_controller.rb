@@ -2,7 +2,7 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.where("starts_at > ?", Time.now)
+    @events = Event.upcoming
 
     respond_to do |format|
       format.html # index.html.erb

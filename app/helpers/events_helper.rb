@@ -1,10 +1,10 @@
 module EventsHelper
 
-  def price_helper(price)
-   if (price > 0.0)
-    number_to_currency(price, precision: 2)
+  def price_helper(event)
+   if (event.free?)
+     "Free!"
     else
-    "Free!"
+      number_to_currency(event.price, precision: 2)
     end
   end
 end

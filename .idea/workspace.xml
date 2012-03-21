@@ -38,7 +38,16 @@
       <file leaf-file-name="events_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/events_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="51" selection-start="144" selection-end="147" vertical-scroll-proportion="0.0">
+            <state line="36" column="9" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="events_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/events_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="51" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -47,7 +56,16 @@
       <file leaf-file-name="event.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/event.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="75" selection-start="478" selection-end="478" vertical-scroll-proportion="0.2372093">
+            <state line="5" column="30" selection-start="272" selection-end="272" vertical-scroll-proportion="0.13178295">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/events/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="52" selection-start="277" selection-end="277" vertical-scroll-proportion="-4.576923">
               <folding />
             </state>
           </provider>
@@ -63,19 +81,19 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/helpers/events_helper.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/events/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/events/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/events/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/events_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/events/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/events_helper.rb" />
         <option value="$PROJECT_DIR$/app/models/event.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1272" />
-    <option name="y" value="-5" />
+    <option name="y" value="795" />
     <option name="width" value="1296" />
     <option name="height" value="813" />
   </component>
@@ -466,7 +484,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1272" y="-5" width="1296" height="813" extended-state="6" />
+    <frame x="1272" y="795" width="1296" height="813" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -564,23 +582,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/events_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="65" selection-end="65" vertical-scroll-proportion="0.07906977">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/events/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="45" selection-end="45" vertical-scroll-proportion="0.08239096">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/events/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="54" selection-start="424" selection-end="424" vertical-scroll-proportion="0.24717286">
           <folding />
         </state>
       </provider>
@@ -594,14 +598,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/events_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="51" selection-start="144" selection-end="147" vertical-scroll-proportion="0.0">
+        <state line="36" column="9" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="52" selection-start="277" selection-end="277" vertical-scroll-proportion="-4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/events_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="51" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/event.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="75" selection-start="478" selection-end="478" vertical-scroll-proportion="0.2372093">
+        <state line="5" column="30" selection-start="272" selection-end="272" vertical-scroll-proportion="0.13178295">
           <folding />
         </state>
       </provider>
