@@ -9,6 +9,5 @@
   <p><%= link_to 'Show', event %>
   <%= link_to 'Edit', edit_event_path(event) %>
   <%= link_to 'Destroy', event, confirm: 'Are you sure?', method: :delete %>
-  <%=  link_to "Register!", new_event_registration_path %>
-  <%=  link_to "Review this event", new_review_path %></p>
+  <%= link_to "Review this event", new_event_review_url(event) %></p>
 </tr>

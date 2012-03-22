@@ -1,5 +1,6 @@
 class Event < ActiveRecord::Base
-  has_many :registrations
+  #has_many :registrations, :dependent => :destroy
+  has_many :reviews, :dependent => :destroy
 
 #  default_scope order("starts_at")
   scope :free, where("price <= 0").order("name")

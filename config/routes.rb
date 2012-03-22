@@ -1,11 +1,10 @@
 Events::Application.routes.draw do
-  resources :reviews
-
   resources :events do
-    resources :registrations
+    match :search, :on => :collection
+    resources :reviews #, only: [:index, :new, :create]
   end
-  root :to => 'events#index'
+  root :to => "events#index"
 
-  get "upcoming-events" => 'events#index', as: "upcoming_events"
+  #sget "upcoming-events" => 'events#index', as: "upcoming_events"
   get "search" => "events#search", as: "search"
 end
