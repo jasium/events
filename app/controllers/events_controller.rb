@@ -4,12 +4,9 @@ class EventsController < ApplicationController
 
   def search
     @events = Event.where("name like ?", params[:q])
-    respond_to do |format|
-      format.html index.html.erb
-      format.json { render json: @events }
-      format.xml  { render xml:  @events }
-    end
+      render index.html.erb
   end
+
   def index
     @events = Event.all
     # was event.upcoming

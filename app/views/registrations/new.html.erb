@@ -1,0 +1,20 @@
+
+<%=  form_for @registration do |f| %>
+
+    <%= render "shared/errors", model: @registration %>
+
+    <fieldset>
+      <p>
+        <%=  f.label :name %>
+        <%=  f.text_field :name %>
+      </p>
+      <p>
+        <%=  f.label :email %>
+        <%=  f.text_field :email %>
+      </p>
+      <p class="actions">
+        <%=  f.submit "Register!" %>
+      </p>
+    </fieldset>
+
+<% end %>
