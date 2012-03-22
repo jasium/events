@@ -1,5 +1,5 @@
 
-<%=  form_for @registration do |f| %>
+<%=  form_for [@event, @registration] do |f| %>
 
     <%= render "shared/errors", model: @registration %>
 

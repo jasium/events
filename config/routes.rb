@@ -1,8 +1,9 @@
 Events::Application.routes.draw do
   resources :reviews
 
-  resources :registrations
-  resources :events
+  resources :events do
+    resources :registrations
+  end
   root :to => 'events#index'
 
   get "upcoming-events" => 'events#index', as: "upcoming_events"

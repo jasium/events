@@ -1,0 +1,7 @@
+
+<h1>Regirstations for <%=  @event.name %></h1>
+<ul>
+  <% @registrations.each do |r| %>
+      <li> <%=  mail_to r.email, r.name %></li>
+  <% end %>
+</ul>

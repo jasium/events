@@ -1,4 +1,6 @@
 class Event < ActiveRecord::Base
+  has_many :registrations
+
 #  default_scope order("starts_at")
   scope :free, where("price <= 0").order("name")
   scope :big, where("capacity >= 200").order("capacity DESC")
